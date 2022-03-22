@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/FingerImages1/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FingerImages1/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HandDictionary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GestureControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl.py" afterDir="false" />
     </list>
@@ -53,7 +52,7 @@
       <recent name="C:\Users\chera\OneDrive\Documents\SPRING 2022\ENGR 3398" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GestureControl">
+  <component name="RunManager" selected="Python.HandDictionary">
     <configuration name="FingerCounter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,7 +95,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HandTrackingModule" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="HandDictionary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,7 +107,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HandTrackingModule.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HandDictionary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.HandDictionary" />
         <item itemvalue="Python.GestureControl" />
         <item itemvalue="Python.FingerCounter" />
         <item itemvalue="Python.Penis" />
         <item itemvalue="Python.HandTrackingModule2" />
-        <item itemvalue="Python.HandTrackingModule" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647915801268</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial commit">
+      <created>1647917435278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647917435278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

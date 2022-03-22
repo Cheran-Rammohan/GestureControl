@@ -13,13 +13,13 @@ cap.set(4, height)
 
 #   Accessing the fingers
 folderPath = "FingerImages1"
-fingerImages = sorted(os.listdir(folderPath), key=len)                       #Accesses all the fingerImages
+fingerImages = os.listdir(folderPath)                      #Accesses all the fingerImages
 print(fingerImages)
 overLayList = []
 for imPath in fingerImages:
     image = cv2.imread(f'{folderPath}/{imPath}')
     overLayList.append(image)
-print(len(overLayList))
+print(overLayList)
 
 
 #   Variables
@@ -38,10 +38,11 @@ while True:
         fingers = detector.fingersUp(hand)          #calls fingersUp method to see how many fingers are up, returns an array
         #print(fingers)                              #prints list of fingers that are up
 
-        #   Gesture 1 - Thumb Open
-        if fingers == [1, 0, 0, 0, 0]:
-            print("thumb open")
-
+        #   Gesture 1 - Index Open
+        if fingers == [0, 1, 0, 0, 0]:
+            print("Index open")
+            h, w, c = overLayList[5].shape              # takes the height, width and color of the image,    (My code)
+            img[0:h, 0:w] = overLayList[5][0:h, 0:w]    # overlays the image on top of the video recording   (My code)
         #   Gesture 2 - Pinkie Open
         if fingers == [0, 0, 0, 0, 1]:
             print("pinkie open")
