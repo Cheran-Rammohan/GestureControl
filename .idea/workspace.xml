@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit" />
+    <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestureControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HandTrackingModule2.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Penis">
+  <component name="RunManager" selected="Python.GestureControl">
     <configuration name="FingerCounter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Penis" />
         <item itemvalue="Python.GestureControl" />
         <item itemvalue="Python.FingerCounter" />
+        <item itemvalue="Python.Penis" />
         <item itemvalue="Python.HandTrackingModule2" />
         <item itemvalue="Python.HandTrackingModule" />
       </list>
@@ -202,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647914117055</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1647914198762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647914198762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
