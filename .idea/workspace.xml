@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/FingerImages1/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FingerImages1/5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GestureControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HandTrackingModule2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chera\OneDrive\Documents\SPRING 2022\ENGR 3398" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.GestureControl">
     <configuration name="FingerCounter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -213,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647914198762</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial commit">
+      <created>1647915801268</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1647915801268</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
