@@ -31,9 +31,7 @@ def main(fingerImages=None):
     pictures = fingerImages[0]
     print(keys, pictures)
 
-    #     keys = keys.append(pic)
-    # print(keys)
-    # #print(overLayList)
+
 
     #The goal is to create a dictionary, where the keys are the values from (0,len(fingerImages) and the values are the strings from fingerImages
 if __name__== "__main__":
