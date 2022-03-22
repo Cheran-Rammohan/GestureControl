@@ -51,7 +51,7 @@
       <recent name="C:\Users\chera\OneDrive\Documents\SPRING 2022\ENGR 3398" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.HandDictionary">
+  <component name="RunManager" selected="Python.FingerCounter">
     <configuration name="FingerCounter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +159,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.FingerCounter" />
         <item itemvalue="Python.HandDictionary" />
         <item itemvalue="Python.GestureControl" />
-        <item itemvalue="Python.FingerCounter" />
         <item itemvalue="Python.Penis" />
         <item itemvalue="Python.HandTrackingModule2" />
       </list>
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647961362590</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Initial commit">
+      <created>1647963406278</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1647963406278</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
