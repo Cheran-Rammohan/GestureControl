@@ -10,7 +10,7 @@ class handDictionary():
 def main(fingerImages=None):
     #   Accessing the fingers
     folderPath = "FingerImages1"
-    fingerImages = os.listdir(folderPath)  # Accesses all the fingerImages
+    fingerImages = sorted(os.listdir(folderPath), key=len)  # Accesses all the fingerImages
     print(fingerImages)
     overLayList = []
     for imPath in fingerImages:
