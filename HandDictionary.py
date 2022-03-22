@@ -25,11 +25,11 @@ def main(fingerImages=None):
     keys = np.empty(vals, dtype=int)
     for i in range(len(fingerImages)):
         keys[i] = i
-
+    print(keys, fingerImages)
     # for j in range(len(fingerImages)):
     #     pictures[j] = fingerImages[j]
-    pictures = fingerImages[0]
-    print(keys, pictures)
+
+
 
 
 

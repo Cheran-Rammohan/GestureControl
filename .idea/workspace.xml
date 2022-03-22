@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestureControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HandDictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/HandDictionary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -254,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647960456938</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1647961362590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647961362590</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
