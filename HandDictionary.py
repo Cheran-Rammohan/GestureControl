@@ -1,13 +1,13 @@
 from cvzone import HandTrackingModule
 import os
 import cv2
-import numpy
+import numpy as np
 
 class handDictionary():
     def __init__(self, name):
         self.name = name
 
-def main():
+def main(fingerImages=None):
     #   Accessing the fingers
     folderPath = "FingerImages1"
     fingerImages = os.listdir(folderPath)  # Accesses all the fingerImages
@@ -19,11 +19,18 @@ def main():
 
     print(len(fingerImages))
 
-    # fingerDict = {}
-    # keys = []
-    # pictures = []
-    for pic in range(0, len(fingerImages)):
-        print("Hello")
+    vals = len(fingerImages)
+    #fingerDict = {}
+    pictures = []
+    keys = np.empty(vals, dtype=int)
+    for i in range(len(fingerImages)):
+        keys[i] = i
+
+    # for j in range(len(fingerImages)):
+    #     pictures[j] = fingerImages[j]
+    pictures = fingerImages[0]
+    print(keys, pictures)
+
     #     keys = keys.append(pic)
     # print(keys)
     # #print(overLayList)
