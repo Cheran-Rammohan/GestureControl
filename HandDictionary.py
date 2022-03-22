@@ -31,68 +31,56 @@ def main():
         overLayList.append(image)
     # print(overLayList)
 
-    #   Variables
-    imgNumber = 0
-
     #   Hand Detector
     detector = HandTrackingModule.HandDetector(detectionCon=0.8, maxHands=1)
-
+    # Main Body
     while True:
         success, img = cap.read()
         hands, img = detector.findHands(img)  # calls findHands method
-
         if hands:  # if there are hands
             hand = hands[0]  # only one hand
-            fingers = detector.fingersUp(
-                hand)  # calls fingersUp method to see how many fingers are up, returns an array
-            # print(fingers)                              #prints list of fingers that are up
+            fingers = detector.fingersUp(hand)            # calls fingersUp method to see how many fingers are up,
+            key = str(binaryCalc(fingers))
+            thisDict = fingerDict(fingerImages)
+            if key in thisDict.keys():  # Tests if the str value is in keys
+                #print("True")
+                print(thisDict.get(key))                    #Prints the value that is associated with the key
+                for img in range(len(fingerImages)):
+                    if thisDict.get(key) == fingerImages[img]:
+                        print(img)
+                        picture = overLayList[0]
+                        h, w, c = picture.shape
+                        img[0:h, 0:w] = picture[0:h, 0:w]
 
-            # #   Gesture 1 - Index Open
-            # if fingers == [0, 1, 0, 0, 0]:
-            #     print("Index open")
-            #     h, w, c = overLayList[1].shape  # takes the height, width and color of the image,    (My code)
-            #     img[0:h, 0:w] = overLayList[1][0:h, 0:w]  # overlays the image on top of the video recording   (My code)
-            # #   Gesture 2 - Pinkie Open
-            # if fingers == [0, 0, 0, 0, 1]:
-            #     print("pinkie open")
-            #print(binaryCalc(fingers))
-            #print(fingerDict(fingerImages))
-            if str(binaryCalc(fingers)) in fingerDict(fingerImages).keys(): #Tests if the str value is in keys
-                print("True")
+                    # h, w, c = thisDict.get(key).shape  # takes the height, width and color of the image,    (My code)
+                    # img[0:h, 0:w] = thisDict.get(key).shape[0:h, 0:w]  # overlays the image on top of the video recording   (My code)
             else:
                 print("False")
+
         cv2.imshow("Image", img)
         key = cv2.waitKey(1)
         if key == ord('q'):
             break
 
 
-def binaryCalc(fingArray): #Returns int = fingers open in terms of pow(2,open)
-    # print(fingArray)
-    runningTotal = []
-    for i in range(len(fingArray)):
-        if fingArray[i] == 1:
-            runningTotal.append(pow(2, i))
-    # print(runningTotal)
-    # print(sum(runningTotal))
-    return sum(runningTotal)
+def binaryCalc(fingArray):                  #Returns int = fingers open in terms of pow(2,open)
+    runningTotal = []                       #Empty array to populate later
+    for i in range(len(fingArray)):         #Runs for loop for length of fingArray (fingerimages is passed value)
+        if fingArray[i] == 1:               #checks if the value at the given point is a 1 or a zero
+            runningTotal.append(pow(2, i))  #appends the runningTotal array with value of pow(2^i)
+    return sum(runningTotal)                #adds the total and returns it as an int
 
 def fingerDict(fingImgs): #Creates a dictionary using images passed in, str value of file is key, .jpg is value
-    #print(fingImgs)
     dict = {}
     fingKeys = []                       #Creates a blank array
-    #fingKeys = ["0", '0', '0', '0', '0', '0']
-    for img in range(len(fingImgs)):
-        image = fingImgs[img]
-        key = image[:-4]
-        #fingImgs[img] = keys
-        fingKeys.append(key)
-    total = zip(fingKeys, fingImgs)
-    for i, j in total:
+    for img in range(len(fingImgs)):    #for each image in the range of fingImages (passed value is array of .jpgs
+        image = fingImgs[img]           #Each image str is saved
+        key = image[:-4]                #The .jpg suffix is removed
+        fingKeys.append(key)            #Adds the key value (number)
+    total = zip(fingKeys, fingImgs)     #zips up the keys with their respective values
+    for i, j in total:                  #populates the dictionary with the key and their value
         dict[i] = j
-    #return fingKeys
-    #return fingImgs
-    return dict
+    return dict                         #Returns Dictionary
 
 if __name__ == "__main__":
     main()
