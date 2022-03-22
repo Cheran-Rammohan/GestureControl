@@ -55,20 +55,24 @@ def main():
             # #   Gesture 2 - Pinkie Open
             # if fingers == [0, 0, 0, 0, 1]:
             #     print("pinkie open")
-            #print(binaryCalc(fingers)):
+            #print(binaryCalc(fingers))
+            #print(fingerDict(fingerImages))
+            if str(binaryCalc(fingers)) in fingerDict(fingerImages).keys(): #Tests if the str value is in keys
+                print("True")
+            else:
+                print("False")
         cv2.imshow("Image", img)
         key = cv2.waitKey(1)
         if key == ord('q'):
-            print(fingerDict(fingerImages))
             break
 
 
 def binaryCalc(fingArray): #Returns int = fingers open in terms of pow(2,open)
     # print(fingArray)
-    runningTotal = [0, 0, 0, 0, 0]
+    runningTotal = []
     for i in range(len(fingArray)):
         if fingArray[i] == 1:
-            runningTotal[i] = pow(2, i)
+            runningTotal.append(pow(2, i))
     # print(runningTotal)
     # print(sum(runningTotal))
     return sum(runningTotal)
