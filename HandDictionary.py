@@ -45,10 +45,11 @@ def main():
             if key in thisDict.keys():  # Tests if the str value is in keys
                 #print("True")
                 print(thisDict.get(key))                    #Prints the value that is associated with the key
-                for img in range(len(fingerImages)):
-                    if thisDict.get(key) == fingerImages[img]:
-                        print(img)
-                        picture = overLayList[0]
+                for i in range(len(fingerImages)):
+                    if thisDict.get(key) == fingerImages[i]: #Compares the strings
+                        print(i)
+                        picture = overLayList[i]
+                        print(picture)
                         h, w, c = picture.shape
                         img[0:h, 0:w] = picture[0:h, 0:w]
 
