@@ -2,7 +2,8 @@ from cvzone import HandTrackingModule
 import os
 import cv2
 import numpy as np
-
+import paho.mqtt.client as mqtt
+from turtle import delay
 
 # The goal is to create a dictionary, where the keys are the values from (0,len(fingerImages) and the values are the
 # strings from fingerImages
@@ -12,6 +13,15 @@ class handDictionary():
 
 
 def main():
+
+    #=======================#
+    #Initialize MQTT Broke..#
+    mqttBroker ="172.20.10.9"
+    client = mqtt.Client("FingerCount")
+    client.connect(mqttBroker)
+    delay_mqtt = 0
+    #=======================#
+
     # variables
     width, height = 640, 480
 
@@ -37,12 +47,14 @@ def main():
     while True:
         success, img = cap.read()
         hands, img = detector.findHands(img)  # calls findHands method
+        
         if hands:  # if there are hands
             hand = hands[0]  # only one hand
             fingers = detector.fingersUp(hand)            # calls fingersUp method to see how many fingers are up,
             key = str(binaryCalc(fingers))
             thisDict = fingerDict(fingerImages)
-            if key in thisDict.keys():                     # Tests if the str value is in keys
+            delay_mqtt += 1
+            if key in thisDict.keys():  # Tests if the str value is in keys
                 #print("True")
                 print(thisDict.get(key))                    #Prints the value that is associated with the key
                 for i in range(len(fingerImages)):
@@ -52,6 +64,13 @@ def main():
                         #print(picture)
                         h, w, c = picture.shape
                         img[0:h, 0:w] = picture[0:h, 0:w]
+                        
+                        #====================================#
+                        #Relay Finger Count to MQTT Subcriber#
+                        if delay_mqtt >= 10:
+                            client.publish("Count",fingerImages[i])
+                            print("Finger Count Has Been Sent To Home Assistant")
+                            delay_mqtt = 0
 
                     # h, w, c = thisDict.get(key).shape  # takes the height, width and color of the image,    (My code)
                     # img[0:h, 0:w] = thisDict.get(key).shape[0:h, 0:w]  # overlays the image on top of the video recording   (My code)
