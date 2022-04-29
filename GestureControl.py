@@ -13,7 +13,7 @@ class handDictionary():
 
 def main():
     # variables
-    width, height = 640, 480
+    width, height = 1080, 720
 
     # camera setup
 

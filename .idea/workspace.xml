@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18a9c48a-621c-4534-bb39-1abc1326bf23" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/DemoFingers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MQTTFingerUpdated.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GestureControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestureControl_MQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureControl_MQTT.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestureMQTT-HomeAssist-Link-main/GestureControl_MQTT.py" beforeDir="false" afterPath="$PROJECT_DIR$/GestureMQTT-HomeAssist-Link-main/GestureControl_MQTT.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +55,8 @@
       <recent name="C:\Users\chera\OneDrive\Documents\SPRING 2022\ENGR 3398" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GestureControl">
-    <configuration name="GestureControl (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.MQTTFingerUpdated">
+    <configuration name="DemoFingers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GestureControl.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DemoFingers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,6 +140,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GestureControl_MQTT (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ENGR 3398" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GestureControl_MQTT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="GestureControl_MQTT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="HeartDisease" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="MQTTFingerUpdated" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ENGR 3398" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,28 +194,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HeartDisease.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TensorPractice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ENGR 3398" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TensorPractice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MQTTFingerUpdated.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,18 +205,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.GestureControl" />
-      <item itemvalue="Python.GestureControl (1)" />
-      <item itemvalue="Python.HeartDisease" />
-      <item itemvalue="Python.TensorPractice" />
       <item itemvalue="Python.GestureControl_MQTT" />
+      <item itemvalue="Python.MQTTFingerUpdated" />
+      <item itemvalue="Python.DemoFingers" />
+      <item itemvalue="Python.GestureControl_MQTT (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GestureControl" />
+        <item itemvalue="Python.MQTTFingerUpdated" />
+        <item itemvalue="Python.GestureControl_MQTT (1)" />
         <item itemvalue="Python.GestureControl_MQTT" />
-        <item itemvalue="Python.TensorPractice" />
-        <item itemvalue="Python.HeartDisease" />
-        <item itemvalue="Python.GestureControl (1)" />
+        <item itemvalue="Python.DemoFingers" />
+        <item itemvalue="Python.GestureControl" />
       </list>
     </recent_temporary>
   </component>

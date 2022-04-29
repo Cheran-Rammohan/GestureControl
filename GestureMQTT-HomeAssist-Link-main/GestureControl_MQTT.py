@@ -37,7 +37,7 @@ def main():
     #   Accessing the fingers
     folderPath = "FingerImages1"
     fingerImages = sorted(os.listdir(folderPath), key=len)  # Accesses all the fingerImages
-    print(fingerImages)
+    #print(fingerImages)
     overLayList = []
     for imPath in fingerImages:
         image = cv2.imread(f'{folderPath}/{imPath}')
@@ -62,7 +62,7 @@ def main():
                 print(thisDict.get(key))                    #Prints the value that is associated with the key
                 for i in range(len(fingerImages)):
                     if thisDict.get(key) == fingerImages[i]: #Compares the strings
-                        print(i)
+                        #print(i)
                         picture = overLayList[i]
                         #print(picture)
                         h, w, c = picture.shape
@@ -70,7 +70,7 @@ def main():
                         
                         #====================================#
                         #Relay Finger Count to MQTT Subcriber#
-                        if delay_mqtt >= 10:
+                        if delay_mqtt >= 50:
                             client.publish("Count",fingerImages[i])
                             print("Finger Count Has Been Sent To Home Assistant")
                             delay_mqtt = 0
