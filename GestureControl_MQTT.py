@@ -67,7 +67,6 @@ def main():
                         # print(picture)
                         h, w, c = picture.shape
                         img[0:h, 0:w] = picture[0:h, 0:w]
-
                         # ====================================#
                         # Relay Finger Count to MQTT Subcriber#
                         if delay_mqtt >= 40:
